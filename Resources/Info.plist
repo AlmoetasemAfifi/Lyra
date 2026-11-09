@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>Lyra</string>
+    <key>CFBundleDisplayName</key><string>Lyra</string>
+    <key>CFBundleIdentifier</key><string>com.almotasem.wordlight</string>
+    <key>CFBundleExecutable</key><string>Lyra</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>2.0</string>
+    <key>CFBundleVersion</key><string>2</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSAudioCaptureUsageDescription</key><string>Lyra listens to the music playing in Music or Spotify so the wallpaper can pulse on the beat. Nothing is recorded or saved.</string>
+    <key>NSAppleEventsUsageDescription</key><string>Lyra reads the song that is currently playing in Music or Spotify so it can show its lyrics in time.</string>
+</dict>
+</plist>
