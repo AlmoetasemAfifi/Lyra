@@ -114,6 +114,20 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             m.popUp(positioning: nil, at: NSPoint(x: 0, y: view.bounds.minY - 4), in: view)
             return nil
         }
+        // Developer (for demo videos): WL_TOGGLE_ONCE=seconds flips the live wallpaper once;
+        // WL_STYLE_CYCLE="Glow:4,Neon:5" switches lyric style after each given number of seconds.
+        if let v = ProcessInfo.processInfo.environment["WL_TOGGLE_ONCE"], let at = Double(v) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + at) { [weak self] in self?.engine.toggleLive() }
+        }
+        if let v = ProcessInfo.processInfo.environment["WL_STYLE_CYCLE"] {
+            var t = 0.0
+            for part in v.split(separator: ",") {
+                let kv = part.split(separator: ":")
+                guard kv.count == 2, let style = DisplayStyle(rawValue: String(kv[0])), let d = Double(kv[1]) else { continue }
+                DispatchQueue.main.asyncAfter(deadline: .now() + t) { [weak self] in self?.engine.prefs.style = style }
+                t += d
+            }
+        }
         // Developer: WL_TOGGLE_EVERY=seconds flips the live wallpaper on a timer (to film the transition).
         if let v = ProcessInfo.processInfo.environment["WL_TOGGLE_EVERY"], let every = Double(v) {
             Timer.scheduledTimer(withTimeInterval: every, repeats: true) { [weak self] _ in

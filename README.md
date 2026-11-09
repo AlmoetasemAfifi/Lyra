@@ -6,7 +6,11 @@
 The song playing in Apple Music or Spotify becomes a moving wallpaper in its album colours,<br>
 with the lyrics lighting up word by word, on your desktop and lock screen.</p>
 
-<p align="center"><a href="../../releases/latest"><b>⬇ Download for Mac (free)</b></a></p>
+<p align="center"><a href="https://github.com/AlmoetasemAfifi/Lyra/releases/latest"><b>⬇ Download for Mac (free)</b></a></p>
+
+<p align="center"><img src="docs/demo.gif" width="100%" alt="Lyra turning the desktop into a live lyrics wallpaper"></p>
+
+<p align="center"><a href="https://github.com/AlmoetasemAfifi/Lyra/releases/download/v2.0/Lyra-launch.mp4">▶ Watch the full 30-second video</a></p>
 
 <p align="center"><img src="docs/glow.png" width="49%" alt="Glow style"> <img src="docs/constellation.png" width="49%" alt="Constellation style"></p>
 
@@ -24,7 +28,7 @@ with the lyrics lighting up word by word, on your desktop and lock screen.</p>
 
 ## Install
 
-1. Download the zip for your Mac from **[Releases](../../releases/latest)**:
+1. Download the zip for your Mac from **[Releases](https://github.com/AlmoetasemAfifi/Lyra/releases/latest)**:
    - **Lyra-AppleSilicon.zip** for M1, M2, M3 and M4 Macs
    - **Lyra-Intel.zip** for Intel Macs
 
